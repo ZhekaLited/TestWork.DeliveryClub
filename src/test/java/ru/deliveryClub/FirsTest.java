@@ -42,6 +42,14 @@ public class FirsTest extends WebDriverSetting {
           Assertions.assertEquals("https://www.google.com/?safe=active&ssui=on",driver.getCurrentUrl()); //Тестирует URL поля
          Assertions.assertTrue(driver.getCurrentUrl().contains("google.com")); // Содержин конкретные адресс
         String text = "text"; // Строковая переменная
+        
+        
+        //Выполняет вставляние в строки какого то текста
+         String text = "text"; // Строковая переменная
+        WebElement input = driver.findElement(By.xpath("//input[@title='Поиск']"));  //вебрайвер будет искать элемент . Xpath - нуэно найти в консоли
+        input.sendKeys(text); 
+        
+       
     }
     }
 }
