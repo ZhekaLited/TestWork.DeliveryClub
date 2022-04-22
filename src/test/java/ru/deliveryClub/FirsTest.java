@@ -34,5 +34,8 @@ public class FirsTest extends WebDriverSetting {
         @Test
     public void getTitle() {
         Assertions.assertEquals("Google",driver.getTitle()); // Проверка титла страницы
+        
+         @BeforeClass //Будет в начале  один раз в определнном классе
+        @AfterClass // Будет в конце один раз в определнном классе
     }
 }
