@@ -18,6 +18,7 @@ public class FirsTest extends WebDriverSetting {
         Assert.assertTrue(title.equals("Delivery Club — Доставка еды и продуктов"));
         //Закрытие врайвера
         driver.quit();
+        //driver.manage().window().maximize(); Открытие на полный экран
 
     }
 
