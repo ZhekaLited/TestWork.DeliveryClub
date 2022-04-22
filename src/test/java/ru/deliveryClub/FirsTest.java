@@ -39,5 +39,6 @@ public class FirsTest extends WebDriverSetting {
         @AfterClass // Будет в конце один раз в определнном классе
         
         driver.manage().window().maximize(); // Открывает окно на целый экран
+          Assertions.assertEquals("https://www.google.com/?safe=active&ssui=on",driver.getCurrentUrl()); //Тестирует URL поля
     }
 }
