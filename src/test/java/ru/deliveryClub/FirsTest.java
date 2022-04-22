@@ -48,6 +48,7 @@ public class FirsTest extends WebDriverSetting {
          String text = "text"; // Строковая переменная
         WebElement input = driver.findElement(By.xpath("//input[@title='Поиск']"));  //вебрайвер будет искать элемент . Xpath - нуэно найти в консоли
         input.sendKeys(text); 
+        input.sendKeys(Keys.ENTER); //Нажимает кнопки
         
        
     }
