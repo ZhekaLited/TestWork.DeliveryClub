@@ -37,5 +37,7 @@ public class FirsTest extends WebDriverSetting {
         
          @BeforeClass //Будет в начале  один раз в определнном классе
         @AfterClass // Будет в конце один раз в определнном классе
+        
+        driver.manage().window().maximize(); // Открывает окно на целый экран
     }
 }
