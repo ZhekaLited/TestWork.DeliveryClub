@@ -49,6 +49,7 @@ public class FirsTest extends WebDriverSetting {
         WebElement input = driver.findElement(By.xpath("//input[@title='Поиск']"));  //вебрайвер будет искать элемент . Xpath - нуэно найти в консоли
         input.sendKeys(text); 
         input.sendKeys(Keys.ENTER); //Нажимает кнопки
+        Assertions.assertTrue(driver.getCurrentUrl().contains("google.com/search")); //Проверка что поиск состоялся
         
        
     }
