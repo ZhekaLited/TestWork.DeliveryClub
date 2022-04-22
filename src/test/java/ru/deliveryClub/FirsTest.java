@@ -30,5 +30,9 @@ public class FirsTest extends WebDriverSetting {
         Assert.assertTrue(title.equals("Delivery Club — Доставка еды и продуктов"));
         driver.quit();
 
+        
+        @Test
+    public void getTitle() {
+        Assertions.assertEquals("Google",driver.getTitle()); // Проверка титла страницы
     }
 }
